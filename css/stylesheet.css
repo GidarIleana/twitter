@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #171F2A;
+}
+
+.grid {
+    background-color: #171F2A;;
+}
+
+.grid {
+display: grid;
+grid-template-columns:  2fr 1fr ;
+grid-template-rows: auto;
+grid-template-areas:
+"header header"
+"container sidebar"
+"container footer";
+column-gap: 20px;
+}
+
+
+.header {
+
+    display: grid ;
+    grid-area: header;
+    background-color: #171F2A ;
+    grid-template-columns: 2fr 1fr ;
+    border-bottom: 1px solid gray;
+    
+}
+
+.left-side {  
+    text-align: center;
+
+}
+
+.container {
+  
+    grid-area: container;
+    background-color: #171F2A;
+    margin:  0 0 0 150px ;
+}
+
+.sidebar {
+  
+    grid-area: sidebar;
+    background-color: #171F2A;
+    margin: 0 150px 0 0 ;
+    row-gap: 20px;
+    display:grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    grid-template-areas:
+    "signup"
+    "widgets"
+    "trends"
+    "end";
+}
+.footer {
+  
+    grid-area: footer;
+    background-color: #171F2A;;
+    margin: 0 150px 0 0 ;  
+}
+.container { 
+    border-style: groove ;
+    border-color: gray ;
+}
+.trends { 
+    border-style: groove ;
+    border-color: gray ;
+    border-radius: 10%;
+}
+
+.timeline {
+    flex-grow: 1;
+    background-color: #171F2A;;
+    margin: 10px 20px 0;
+  }
+  
+   .timeline nav {
+    border-bottom: 1px solid #e6ecf0;
+    padding: 10px 15px;
+  }
+  
+   .timeline nav a {
+    text-decoration: none;
+    color: #3bb9e3;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  
+  
+   .timeline nav a:first-child {
+    margin: 0;
+  }
+  
+   .timeline nav a.active {
+    color: blue;
+  }
+  
+  .timeline ul.tweets {
+    list-style: none;
+  }
+  
+   .timeline ul.tweets li {
+    border-bottom: 1px solid #e6ecf0;
+    padding: 10px 15px;
+    display: flex;
+  }
+  
+   .timeline ul.tweets li > img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+  
+   .timeline ul.tweets li .info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+   .timeline ul.tweets li .info strong {
+    font-size: 14px;
+    color: darkblue;
+  }
+  
+   .timeline ul.tweets li .info strong span {
+    font-weight: normal;
+    font-size: 13px;
+    color: lightgrey;
+  }
+  
+ .timeline ul.tweets li .info p {
+    font-size: 14px;
+    color: lightgrey;
+    margin-top: 5px;
+  }
+  
+   .timeline ul.tweets li .actions {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+   .timeline ul.tweets li .actions a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 30px;
+  }
+  
+  .timeline ul.tweets li .actions a:first-child {
+    margin-left: 0;
+  }
+  
+   .timeline ul.tweets li .actions a img {
+    margin-right: 5px;
+  }
+  
+  .widgets .widget {
+    background-color: #151c25;
+    padding: 15px;
+  }
+  
+  .widgets .widget .title {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .widgets .widget .title strong {
+    font-size: 18px;
+    color: #1f2226;
+  }
+  
+  .widgets .widget .title a {
+    color: #3bb9e3;
+    font-size: 12px;
+    text-decoration: none;
+    position: relative;
+    padding-left: 10px;
+  }
+  
+    .widgets .widget .title a::before {
+    content: "";
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #222;
+    position: absolute;
+    left: 4px;
+    top: 6px;
+  }
+  
+  .widgets .follow ul {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+ .widgets .follow ul li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccd6dd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .widgets .follow ul li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: 0;
+  }
+  
+  .widgets .follow ul li .profile {
+    display: flex;
+    align-items: center;
+  }
+    
+  .widgets .follow ul li .profile img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+  
+  .widgets .follow ul li .profile .info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .widgets .follow ul li .profile .info strong {
+    font-size: 14px;
+    color: #1f2326;
+  }
+  
+  .widgets .follow ul li .profile .info strong span {
+    font-weight: normal;
+    color: #9a9a9a;
+  }
+  
+ .widgets .follow ul li .profile .info button {
+    height: 35px;
+    margin-top: 4px;
+    background-color: #1D2733;
+    color: #008CBA ;
+    border-radius: 17px;
+    border: 2px solid #008CBA;
+} 
+.signup{
+    border-radius: 10%;
+    border-style: groove ;
+    border-color: gray ;
+}
+.signup {
+
+    border-style: groove ;
+    border-color: gray ;
+    
+}
+.signup h2 {
+    color :white;
+}
+.signup p {
+    color :white}
+
+.trends p{
+    color: white;
+}
+#image1 {
+    height: 250px;
+    width: 100%;
+    max-width: 670px;
+   
+}
+#btn {
+    height: 35px;
+    width: 100px;
+    margin-top: 4px;
+    background-color: #1D2733;
+    color: #008CBA ;
+    border-radius: 17px;
+    border: 2px solid #008CBA;
+}
+.profile-details{
+    color: white;
+}
+.input {
+
+    height: 30px;
+    width: 120px;
+    margin-top: 4px;
+    background-color: #1D2733;
+    color: #008CBA ;
+    border-radius: 17px;
+    border: 2px solid #008CBA;
+}
+.search {
+    height: 30px;
+    width: 300px;
+    margin-top: 4px;
+    background-color: rgb(10, 18, 27);
+    border-radius: 17px;
+    border: 2px solid #008CBA;
+}
+.inputup {
+
+    height: 30px;
+    width: 120px;
+    margin-top: 4px;
+    border-radius: 17px;
+    border: 2px solid #008CBA;}
+
+    .newinput{
+        height: 30px;
+        width: 250px;
+        margin-top: 4px;
+        border-radius: 17px;
+        border: 2px solid #008CBA;
+    }
+
+
+    @media only screen and (max-width: 500px) {
+.grid {
+    display: grid;
+    grid-template-columns:  1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "container";}
+.sidebar{ display:none}
+.footer {display:none}
+.header{
+    display: grid ;
+    grid-area: header;
+    background-color: #171F2A ;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr;
+    border-bottom: 1px solid gray;
+}
+    }
+
+/* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...}*/
